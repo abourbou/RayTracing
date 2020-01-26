@@ -6,7 +6,7 @@
 #    By: abourbou <abourbou@student.le-101.fr>      +:+   +:    +:    +:+      #
 #                                                  #+#   #+    #+    #+#       #
 #    Created: 2019/11/14 10:41:55 by abourbou     #+#   ##    ##    #+#        #
-#    Updated: 2020/01/24 10:01:21 by abourbou    ###    #+. /#+    ###.fr      #
+#    Updated: 2020/01/26 14:06:08 by abourbou    ###    #+. /#+    ###.fr      #
 #                                                          /                   #
 #                                                         /                    #
 # **************************************************************************** #
@@ -126,6 +126,9 @@ save			:	all
 
 clean_shot		:
 					$(RM) image**.bmp
+
+norme			:
+					norminette src/parsing src/*.c src/ray_tracing includes libft
 
 libft			:	$(LIBFT_A)
 $(LIBFT_A)		:
