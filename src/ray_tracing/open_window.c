@@ -6,13 +6,12 @@
 /*   By: abourbou <abourbou@student.le-101.fr>      +:+   +:    +:    +:+     */
 /*                                                 #+#   #+    #+    #+#      */
 /*   Created: 2020/01/06 10:21:29 by abourbou     #+#   ##    ##    #+#       */
-/*   Updated: 2020/01/20 15:12:13 by abourbou    ###    #+. /#+    ###.fr     */
+/*   Updated: 2020/01/26 13:58:18 by abourbou    ###    #+. /#+    ###.fr     */
 /*                                                         /                  */
 /*                                                        /                   */
 /* ************************************************************************** */
 
 #include "../../includes/raytracing.h"
-#include "../../includes/tests.h"
 
 static int		change_cam(int key, t_renderer *rdr, t_param *param)
 {

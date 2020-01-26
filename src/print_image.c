@@ -6,7 +6,7 @@
 /*   By: abourbou <abourbou@student.le-101.fr>      +:+   +:    +:    +:+     */
 /*                                                 #+#   #+    #+    #+#      */
 /*   Created: 2020/01/13 10:59:07 by abourbou     #+#   ##    ##    #+#       */
-/*   Updated: 2020/01/24 10:03:07 by abourbou    ###    #+. /#+    ###.fr     */
+/*   Updated: 2020/01/26 13:56:25 by abourbou    ###    #+. /#+    ###.fr     */
 /*                                                         /                  */
 /*                                                        /                   */
 /* ************************************************************************** */
@@ -50,9 +50,9 @@ static void		fill_bmp_header(t_renderer *rdr, int fd)
 	t_bitmap bitmap;
 
 	ft_memcpy(bitmap.fileheader.signature, "BM", 2);
-	bitmap.fileheader.filesize = rdr->r_size * 3 + sizeof(t_bitmap) - 2;
+	bitmap.fileheader.filesize = rdr->r_size * 3 + sizeof(t_bitmap);
 	bitmap.fileheader.reserved = 0;
-	bitmap.fileheader.fileoffset_to_pixelarray = 0;
+	bitmap.fileheader.fileoffset_to_pixelarray = 54;
 	bitmap.imageheader.dibheadersize = sizeof(t_imageheader);
 	bitmap.imageheader.width = rdr->r_wid;
 	bitmap.imageheader.height = rdr->r_hei;

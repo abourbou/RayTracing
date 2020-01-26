@@ -6,7 +6,7 @@
 /*   By: abourbou <abourbou@student.le-101.fr>      +:+   +:    +:    +:+     */
 /*                                                 #+#   #+    #+    #+#      */
 /*   Created: 2020/01/14 10:18:45 by abourbou     #+#   ##    ##    #+#       */
-/*   Updated: 2020/01/22 13:00:30 by abourbou    ###    #+. /#+    ###.fr     */
+/*   Updated: 2020/01/26 13:55:24 by abourbou    ###    #+. /#+    ###.fr     */
 /*                                                         /                  */
 /*                                                        /                   */
 /* ************************************************************************** */
@@ -62,7 +62,7 @@ int			set_up_mlx(t_param *param, void **mlx_ptr, void **win,
 		param->res.x = MAX_X;
 	if (param->res.y > MAX_Y)
 		param->res.y = MAX_Y;
-	if (!(*win = mlx_new_window(*mlx_ptr, 1600, 1200, "image")))
+	if (!(*win = mlx_new_window(*mlx_ptr, param->res.x, param->res.y, "image")))
 	{
 		ft_putstr_fd("Error \nmlx_new_window failed\n", 2);
 		return (free_params(param));
