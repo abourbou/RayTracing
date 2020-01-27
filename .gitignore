@@ -1,0 +1,20 @@
+# Personal configs
+.vscode/
+# Dependencies
+libft/*.a
+libx/*/*.a
+# Trashies
+*.DS_Store
+# Precompiled includes
+*.gch
+# Precompiled source code
+*.o
+# Testing tools
+./includes/tests.h
+src/*/tests/
+# Executables
+a.out
+a.out.dSYM/
+miniRT
+# Image created
+image**.bmp
