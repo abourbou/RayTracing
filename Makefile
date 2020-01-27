@@ -6,7 +6,7 @@
 #    By: abourbou <abourbou@student.le-101.fr>      +:+   +:    +:    +:+      #
 #                                                  #+#   #+    #+    #+#       #
 #    Created: 2019/11/14 10:41:55 by abourbou     #+#   ##    ##    #+#        #
-#    Updated: 2020/01/26 14:06:08 by abourbou    ###    #+. /#+    ###.fr      #
+#    Updated: 2020/01/27 10:14:15 by abourbou    ###    #+. /#+    ###.fr      #
 #                                                          /                   #
 #                                                         /                    #
 # **************************************************************************** #
@@ -100,7 +100,7 @@ SRC				=	src/parsing/atod.c \
 INC_PATH		=	includes
 INC_NAME		=	shapes.h \
 					parsing.h \
-					ray_tracing.h \
+					raytracing.h \
 					intersect_resolv.h \
 					print_image.h
 
@@ -112,7 +112,7 @@ INC				=	$(addprefix $(INC_PATH)/,$(INC_NAME))
 
 all				:	$(NAME)
 
-$(NAME)			:	libft mlx $(OBJ)
+$(NAME)			:	libft mlx $(OBJ) $(INC)
 					$(CC) $(CFLAGS) $(INCLUDES) $(MLX_COMP) $(LIBFT_A) $(OBJ) src/main.c -o $(NAME)
 
 common			:	$(NAME)
